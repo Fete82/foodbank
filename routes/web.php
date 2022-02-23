@@ -24,5 +24,11 @@ Route::get('/food', function () {
         ['name' => 'Pizza']
     ];
 
-    return view('food', ['foods' => $foods]);
+    return view('food', [
+        'foods' => $foods
+    ]);
+});
+
+Route::get('/food/{id}', function ($id) {
+    return view('recipe', ['id' => $id]);
 });
