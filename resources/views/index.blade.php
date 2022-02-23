@@ -3,19 +3,25 @@
 @section('home')
 <style>
     .home-body {
-        background-image: url('img/hotdog-banner.jpg');
+        background-image: url('img/background-cows.jpg');
         background-size: 2000px auto;
         background-repeat: no-repeat;
         background-attachment: fixed;
         background-position: center;
+        object-fit: cover;
 
     }
+
 </style>
 <body class="home-body">
     <!-- Welcoming page -->
-    <div class="container mt-3 text-center">
-        <h1>Foodbank</h1>
-        <h3>Probably The Most Nutritional Food In The World</h3>
+    <div class="align-middle text-center mt-5 text-dark">
+        <h1 class="display-1">Foodbank</h1>
+        <h1 class="display-6">Animals Are Food</h1>
+
+        <div>
+            <a class="btn btn-lg btn-primary mt-5" href='food'>Browse foods</a>
+        </div>
     </div>
 </body>
 @endsection
