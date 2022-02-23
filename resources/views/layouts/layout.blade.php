@@ -10,7 +10,14 @@
 
 </head>
 <style>
-    
+    .footer-fixed {
+        color: white;
+        text-align: center;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 2.5rem;      
+    }
 
 </style>
 
@@ -40,8 +47,8 @@
 
     @yield('main')
     @yield('home')
-    
-    <footer class="container mt-5 text-center">
+
+    <footer class="footer-fixed">
         &copy; 2022 Edvin Lindahl
     </footer>
 </body>
