@@ -40,6 +40,7 @@
 
     @yield('main')
     @yield('home')
+    
     <footer class="container mt-5 text-center">
         &copy; 2022 Edvin Lindahl
     </footer>
