@@ -6,7 +6,6 @@ use Illuminate\Http\Request;
 
 class FoodController extends Controller
 {
-    protected $namespace = 'App\Http\Controllers';
     // Action: Index
     public function index() {
         $foods = [
