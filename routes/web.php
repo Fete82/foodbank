@@ -23,6 +23,7 @@ Route::get('/food', [FoodController::class, 'index']);
 Route::get('/food/{id}', [FoodController::class, 'show']);
 
 
+
 /**
  * Updated syntax in Laravel 8.x.x -> Above syntax for actions to classes updated.
  * Net Ninja Videos outdated syntax!

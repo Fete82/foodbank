@@ -9,8 +9,7 @@
 
         @foreach($foods as $food)
         <div>
-           
-            <h6> {{$loop->index}} - {{ $food['name'] }}</h6>
+            <h3>{{ $food->id }} {{ $food->name }}</h3> <p>{{ $food->description }}</p>
         </div>
         @endforeach
     </div>
