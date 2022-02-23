@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\FoodController;
 
 /*
 |--------------------------------------------------------------------------
@@ -17,18 +18,12 @@ Route::get('/', function () {
     return view('index');
 });
 
-Route::get('/food', function () {
-    $foods = [
-        ['name' => 'Hamburger'],
-        ['name' => 'Hot Dog'],
-        ['name' => 'Pizza']
-    ];
+Route::get('/food', [FoodController::class, 'index']);
 
-    return view('food', [
-        'foods' => $foods
-    ]);
-});
+Route::get('/food/{id}', [FoodController::class, 'show']);
 
-Route::get('/food/{id}', function ($id) {
-    return view('recipe', ['id' => $id]);
-});
+
+/**
+ * Updated syntax in Laravel 8.x.x -> Above syntax for actions to classes updated.
+ * Net Ninja Videos outdated syntax!
+ */

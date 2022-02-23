@@ -46,7 +46,6 @@
     </nav>
 
     @yield('main')
-    @yield('home')
 
     <footer class="footer-fixed">
         &copy; 2022 Edvin Lindahl
