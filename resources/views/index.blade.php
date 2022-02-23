@@ -39,10 +39,10 @@
 
     <!-- Main content -->
 
-    <div class="container mt-5">
+    <div class="container mt-5 text-center">
         <h1>Foodbank</h1>
         <h3>Probably The Most Nutritional Food In The World</h3>
-        <img src="img/hotdog-banner.jpg" class="img-fluid" alt="Hotdog-Banner-Image">
+
     </div>
 
 </body>
