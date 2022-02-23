@@ -16,8 +16,8 @@
 <body class="home-body">
     <!-- Welcoming page -->
     <div class="align-middle text-center mt-5 text-dark">
-        <h1 class="display-1">Foodbank</h1>
-        <h1 class="display-6">Animals Are Food</h1>
+        <h1 class="display-1 p-3">Foodbank</h1>
+        <h1 class="display-6">Animals are also food</h1>
 
         <div>
             <a class="btn btn-lg btn-primary mt-5" href='food'>Browse foods</a>
