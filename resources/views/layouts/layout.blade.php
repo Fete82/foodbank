@@ -39,4 +39,5 @@
     </nav>
 </body>
 @yield('main')
+@yield('home')
 </html>
