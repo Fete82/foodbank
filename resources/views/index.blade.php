@@ -8,6 +8,10 @@
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 </head>
+<style>
+    
+
+</style>
 
 <body>
     <!-- Bootstrap Navbar -->
@@ -38,6 +42,7 @@
     <div class="container mt-5">
         <h1>Foodbank</h1>
         <h3>Probably The Most Nutritional Food In The World</h3>
+        <img src="img/hotdog-banner.jpg" class="img-fluid" alt="Hotdog-Banner-Image">
     </div>
 
 </body>
