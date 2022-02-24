@@ -10,7 +10,10 @@
 
 </head>
 <style>
-
+a {
+    color: black;
+    text-decoration: none;
+}
 
 </style>
 
