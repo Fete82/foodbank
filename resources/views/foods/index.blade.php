@@ -9,7 +9,7 @@
         @foreach($foods as $food)
         <div class="container">
             <div>
-                <h3 class="p-1">{{ $food->name }}</h3> 
+                <a href="/food/<?= $food->id ?>"><h3 class="p-1">{{ $food->name }}</h3></a>
             </div>
             <div>
                 <p>{{ $food->description }}</p>

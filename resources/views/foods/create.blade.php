@@ -4,9 +4,6 @@
     <!-- Main content -->
 
     <div class="container mt-5 text-center">
-        <h1>Foodbank</h1>
-    </div>
-    <div class="container">
-        Food list - {{ $id }}
+        <h1>Add Food</h1>
     </div>
 @endsection

@@ -7,18 +7,23 @@ use App\Models\Food;
 
 class FoodController extends Controller
 {
-    // Action: Index
+    // Action: Index All Recipes
     public function index() {
 
         $foods = Food::orderBy('id', 'desc')->get();
 
-        return view('food', [
+        return view('foods/index', [
             'foods' => $foods
         ]);
     }
     
     // Action: Show
     public function show($id) {
-        return view('recipe', ['id' => $id]);
+        return view('foods/show', ['id' => $id]);
+    }
+
+    // Action: Create new recipe
+    public function create() {
+        return view('foods/create');
     }
 }

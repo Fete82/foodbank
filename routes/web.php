@@ -22,6 +22,8 @@ Route::get('/food', [FoodController::class, 'index']);
 
 Route::get('/food/{id}', [FoodController::class, 'show']);
 
+Route::get('/food/create', [FoodController::class, 'create']);
+
 
 
 /**
