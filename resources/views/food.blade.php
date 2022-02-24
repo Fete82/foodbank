@@ -4,8 +4,7 @@
     <!-- Main content -->
 
     <div class="container w-50 mt-5 text-center">
-        <h1>Foodbank</h1>
-        <h2 class="p-4">Select From Our Nutritious Meals</h2>
+        <h1 class="display-5 p-4">Selection of Nutritious Meals</h1>
 
         @foreach($foods as $food)
         <div class="container">
