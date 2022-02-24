@@ -10,7 +10,7 @@ class FoodController extends Controller
     // Action: Index
     public function index() {
 
-        $foods = Food::orderBy('id')->get();
+        $foods = Food::orderBy('id', 'desc')->get();
 
         return view('food', [
             'foods' => $foods
