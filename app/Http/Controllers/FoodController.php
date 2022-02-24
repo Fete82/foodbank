@@ -10,7 +10,7 @@ class FoodController extends Controller
     // Action: Index All Recipes
     public function index() {
 
-        $foods = Food::orderBy('id', 'desc')->get();
+        $foods = Food::orderBy('id', 'asc')->get();
 
         return view('foods/index', [
             'foods' => $foods
@@ -19,7 +19,10 @@ class FoodController extends Controller
     
     // Action: Show
     public function show($id) {
-        return view('foods/show', ['id' => $id]);
+        // findOrFail, instead of find, so that it displays 404 when attempting to reach non-existant food.
+        $food = Food::findOrFail($id);
+        
+        return view('foods/show', ['food' => $food]);
     }
 
     // Action: Create new recipe

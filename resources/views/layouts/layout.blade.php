@@ -11,7 +11,7 @@
 </head>
 <style>
     .footer-fixed {
-        color: rgb(250, 250, 250);
+        color: rgb(190, 190, 190);
         text-align: center;
         position: absolute;
         bottom: 0;
