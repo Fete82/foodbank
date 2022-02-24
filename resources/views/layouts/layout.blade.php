@@ -10,14 +10,7 @@
 
 </head>
 <style>
-    .footer-fixed {
-        color: rgb(190, 190, 190);
-        text-align: center;
-        position: absolute;
-        bottom: 0;
-        width: 100%;
-        height: 2.5rem;      
-    }
+
 
 </style>
 
@@ -47,8 +40,6 @@
 
     @yield('main')
 
-    <footer class="footer-fixed">
-        <p>&copy; 2022 Edvin Lindahl</p>
-    </footer>
+
 </body>
 </html>

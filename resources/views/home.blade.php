@@ -12,6 +12,15 @@
 
     }
 
+    .footer-fixed {
+        color: rgb(255, 255, 255);
+        text-align: center;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 2.5rem;      
+    }
+
 </style>
 <body class="home-body">
     <!-- Welcoming page -->
@@ -20,8 +29,11 @@
         <h1 class="display-6">Robot Cows for Eating - The Future of Food</h1>
 
         <div>
-            <a class="btn btn-lg btn-primary mt-5" href='food'>Browse Recipes</a>
+            <a class="btn btn-lg btn-success mt-5" href='food'>Browse Recipes</a>
         </div>
     </div>
+    <footer class="footer-fixed">
+        <p>&copy; 2022 Edvin Lindahl</p>
+    </footer>
 </body>
 @endsection
