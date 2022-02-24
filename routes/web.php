@@ -15,7 +15,7 @@ use App\Http\Controllers\FoodController;
 */
 
 Route::get('/', function () {
-    return view('index');
+    return view('home');
 });
 
 Route::get('/food', [FoodController::class, 'index']);
