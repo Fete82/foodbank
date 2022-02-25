@@ -39,6 +39,6 @@ class FoodController extends Controller
 
         $food->save();
         
-        return redirect('/food');
+        return redirect('/food')->with('message', 'Recipe added successfully!');
     }
 }
