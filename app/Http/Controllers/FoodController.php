@@ -29,4 +29,8 @@ class FoodController extends Controller
     public function create() {
         return view('foods/create');
     }
+
+    public function store() {
+        return redirect('/food');
+    }
 }

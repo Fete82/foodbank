@@ -10,7 +10,9 @@
         </div>
         <div>
             <form action="/food" method="POST">
+                <!-- cross site refresh forgery -->
                 <div>
+                    @csrf
                     <label class="mt-5" for="name">Name Of Meal:</label>
                     <br>
                     <input type="text" id="input" name="name">
