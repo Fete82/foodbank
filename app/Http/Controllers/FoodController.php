@@ -31,6 +31,14 @@ class FoodController extends Controller
     }
 
     public function store() {
+
+        $food = new Food();
+
+        $food->name = request('name');
+        $food->description = request('description');
+
+        $food->save();
+        
         return redirect('/food');
     }
 }
