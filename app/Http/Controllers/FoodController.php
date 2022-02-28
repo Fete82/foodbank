@@ -39,7 +39,7 @@ class FoodController extends Controller
         $food->ingredients = request('ingredients');
         $food->instruction = request('instruction');
         $food->save();
-        
+        // Returns view /food and outputs message. (x, x)
         return redirect('/food')->with('message', 'Recipe added successfully!');
     }
 
