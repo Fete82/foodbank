@@ -15,7 +15,7 @@ use App\Http\Controllers\FoodController;
 */
 
 Route::get('/', function () {
-    return view('home');
+    return view('welcome');
 });
 
 Route::get('/food', [FoodController::class, 'index']);
@@ -31,3 +31,7 @@ Route::delete('/food/{id}', [FoodController::class, 'destroy']);
  * Updated syntax in Laravel 8.x.x -> Above syntax for actions to classes updated.
  * Net Ninja Videos outdated syntax!
  */
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
