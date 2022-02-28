@@ -1,6 +1,6 @@
-@extends('layouts.layout')
+@extends('layouts.app')
 
-@section('main')
+@section('content')
 <style>
     .home-body {
         background-image: url('img/background-cows.jpg');

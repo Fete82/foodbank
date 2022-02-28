@@ -17,9 +17,9 @@
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
 
-    <!-- Styles -->
+    <!-- Styles, original (probably not used ) -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-
+    <!-- custom style sheet-->
     <link href="/css/style.css" rel="stylesheet">
 </head>
 <body>
@@ -28,6 +28,9 @@
             <div class="container">
                 <a class="navbar-brand" href="{{ url('/') }}">
                     Foodbank
+                </a>
+                <a class="nav-link" href="{{ url('/food') }}">
+                    Meals
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                     <span class="navbar-toggler-icon"></span>
