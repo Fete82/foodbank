@@ -23,10 +23,10 @@
     <form action="/food/{{$food->id}}" method="POST">
         @csrf
         @method('DELETE')
-        <button class="btn-sm btn-danger">Remove Recipe</button>
+        <button class="btn-sm btn-danger">Remove Recipe <i class="bi bi-shield"></i></button>
     </form>
 
-    <a class="btn btn-sm btn-primary mt-5 mb-5" href='/food'>Back to Menu</a>
+    <a class="btn btn-sm btn-primary mt-5 mb-5" href='/food'>Back to Menu <i class="bi bi-arrow-90deg-up"></i></a>
 
 
 

@@ -20,6 +20,6 @@
         </div>
         @endforeach
 
-        <a class="btn btn-lg btn-primary m-5" href='/food/create'>Add New Recipe</a>
+        <a class="btn btn-lg btn-primary m-5" href='/food/create'>Add New Recipe <i class="bi bi-file-earmark-plus"></i></a>
     </div>
 @endsection
