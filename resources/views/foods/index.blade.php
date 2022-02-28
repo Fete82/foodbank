@@ -4,7 +4,7 @@
     <!-- Main content -->
 
     <div class="container w-50 mt-5 text-center">
-        <h1 class="display-4 p-3">Selection of Nutritious Mechanical Meals</h1>
+        <h1 class="display-4 p-3">Selection of meals</h1>
 
         <p class="message-display text-danger">{{ session('message') }}</p>
 

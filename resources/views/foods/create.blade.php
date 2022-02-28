@@ -13,7 +13,7 @@
                 <!-- cross site refresh forgery -->
                 <div>
                     @csrf
-                    <label class="mt-5" for="name">Course name:</label>
+                    <label class="mt-5" for="name">Meal name:</label>
                     <br>
                     <input type="text" id="input" name="name">
                 </div>
@@ -35,11 +35,13 @@
                     </fieldset>
                 </div>
                 <div>
-                <label class="mt-3" for="instructions">Cooking instructions:</label>
+                <label class="mt-3">Cooking instructions:</label>
                     <br>
-                    <textarea type="textarea" id="input" name="instructions"></textarea>
+                    <textarea type="textarea" id="input" name="instruction"></textarea>
                 </div>
                 <input type="submit" class="btn btn-lg btn-primary m-5">
+                <br>
+                <a class="btn btn-sm btn-primary mt-5 mb-5" href='/food'>Back to Menu</a>
             </form>
         </div>
     </div>
