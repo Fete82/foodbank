@@ -9,7 +9,7 @@
         <h1 class="display-6">Cows are mostly food</h1>
 
         <div>
-            <a class="btn btn-lg btn-success mt-5 mx-1" href='food'>Browse Recipes</a>
+            <a class="btn btn-lg btn-primary mt-5 mx-1" href='food'>Browse Recipes</a>
             <a class="btn btn-lg btn-primary mt-5 mx-1" href='/food/create'>Add New Recipe</a>
         </div>
     </div>
