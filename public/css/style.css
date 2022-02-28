@@ -12,3 +12,9 @@ textarea {
 input {
     width: 400px;
 }
+
+.welcome-wrapper-background {
+    /* Target class IS correct, image not showing */
+    background-image: url('/img/background-cows.jpg');
+    background-position: center;
+}
