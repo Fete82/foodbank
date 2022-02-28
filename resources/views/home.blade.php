@@ -30,6 +30,7 @@
 
         <div>
             <a class="btn btn-lg btn-success mt-5" href='food'>Browse Recipes</a>
+            <a class="btn btn-lg btn-primary mt-5" href='/food/create'>Add New Recipe</a>
         </div>
     </div>
     <footer class="footer-fixed">

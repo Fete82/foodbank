@@ -23,6 +23,7 @@ Route::get('/food/create', [FoodController::class, 'create']);
 Route::post('/food', [FoodController::class, 'store']);
 // slug below, to prevent "create" from being {id} slug.
 Route::get('/food/{id}', [FoodController::class, 'show']);
+Route::delete('/food/{id}', [FoodController::class, 'destroy']);
 
 
 

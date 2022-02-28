@@ -11,6 +11,10 @@ class Food extends Model
     // Protected table seems necessary. 
     protected $table = 'foods';
 
+    protected $casts = [
+        'ingredients' => 'array'
+    ];
+
 
 
     

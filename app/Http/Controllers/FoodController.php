@@ -36,9 +36,16 @@ class FoodController extends Controller
 
         $food->name = request('name');
         $food->description = request('description');
-
+        $food->ingredients = request('ingredients');
         $food->save();
         
         return redirect('/food')->with('message', 'Recipe added successfully!');
+    }
+
+    public function destroy($id) {
+        $food = Food::findOrFail($id);
+        $food->delete();
+
+        return redirect('/food');
     }
 }
