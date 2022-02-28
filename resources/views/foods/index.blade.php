@@ -1,6 +1,6 @@
-@extends('layouts.layout')
+@extends('layouts.app')
 
-@section('main')
+@section('content')
     <!-- Main content -->
 
     <div class="container w-50 mt-5 text-center">
