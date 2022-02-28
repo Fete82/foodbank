@@ -12,13 +12,13 @@
     -->
     <div class="container w-50 mt-5">
         <p class="display-6"> Ingredients</p>
-        <ul class="list-group list-group-flush">
+        <ul class="list-group">
             @foreach($food->ingredients as $ingredient)
             <li class="list-group-item">{{ $ingredient ?: '*'}}</li>
             @endforeach
         </ul>
     </div>
-    <p class="display-6"> Instructions</p>
+    <p class="display-6 mt-5"> Instructions</p>
     <div class="container w-50 mt-2 mb-5">{{$food->instruction}}</div>
     <form action="/food/{{$food->id}}" method="POST">
         @csrf

@@ -26,7 +26,7 @@
     <!-- Welcoming page -->
     <div class="align-middle text-center mt-5 text-dark">
         <h1 class="display-1 p-3">Foodbank</h1>
-        <h1 class="display-6">Robot Cows for Eating - The Future of Food</h1>
+        <h1 class="display-6">Cows are mostly food</h1>
 
         <div>
             <a class="btn btn-lg btn-success mt-5" href='food'>Browse Recipes</a>
