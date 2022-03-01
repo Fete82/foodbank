@@ -7,6 +7,7 @@
     <h1 class="display-5">Recipe</h1>
     <h1 class="display-1">{{ $food->name }}</h1>
     <div class="container w-50 mt-5">{{$food->description}}</div>
+    <p>Added {{ $food->created_at }}</p>
     <!-- NUTRITION PARAM 
     <div class="container w-50 mt-5">{{$food->nutrition ?: 'nutrition- 0'}}</div>
     -->
