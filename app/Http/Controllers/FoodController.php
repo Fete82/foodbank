@@ -41,6 +41,7 @@ class FoodController extends Controller
         $food->instruction = request('instruction');
         // Binds user id to post:
         $food->user_id = Auth::user()->id;
+        
         $food->save();
         
         return redirect('/food')->with('message', 'Recipe added successfully!');

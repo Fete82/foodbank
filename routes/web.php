@@ -25,13 +25,6 @@ Route::post('/food', [FoodController::class, 'store'])->middleware('auth');
 Route::get('/food/{id}', [FoodController::class, 'show']);
 Route::delete('/food/{id}', [FoodController::class, 'destroy'])->middleware('auth');
 
-
-
-/**
- * Updated syntax in Laravel 8.x.x -> Above syntax for actions to classes updated.
- * Net Ninja Videos outdated syntax!
- */
-
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
