@@ -38,7 +38,7 @@ class FoodController extends Controller
         $food->description = request('description');
         $food->ingredients = request('ingredients');
         $food->instruction = request('instruction');
-        //$food->user_id = request('user_id');
+        $food->user_id = request('user_id');
         $food->save();
         
         return redirect('/food')->with('message', 'Recipe added successfully!');
