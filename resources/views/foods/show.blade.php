@@ -6,7 +6,7 @@
 <div class="container mt-5 text-center">
     <h1 class="display-5">Recipe</h1>
     <h1 class="display-1">{{ $food->name }}</h1>
-    <p class="mt-3"><strong>Uploaded by {{ $food->user->name }} on {{ $food->created_at }}</strong></p>
+    <p class="mt-3"><strong>Created by {{ $food->user->name }} on {{ $food->created_at }}</strong></p>
     <div class="container w-50 mt-5"><i>{{$food->description}}</i></div>
 
     <!-- NUTRITION PARAM 
