@@ -20,6 +20,8 @@ Route::get('/', function () {
 
 Route::get('/food', [FoodController::class, 'index']);
 Route::get('/food/create', [FoodController::class, 'create'])->middleware('auth');
+// ADD EDIT THING:
+Route::get('/food/edit', [FoodController::class, 'create'])->middleware('auth');
 Route::post('/food', [FoodController::class, 'store'])->middleware('auth');
 // slug below, to prevent "create" from being {id} slug.
 Route::get('/food/{id}', [FoodController::class, 'show']);

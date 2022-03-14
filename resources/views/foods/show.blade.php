@@ -22,11 +22,18 @@
     </div>
     <p class="display-6 mt-5"> Instructions</p>
     <div class="container w-50 mt-2 mb-5">{{$food->instruction}}</div>
-    <form action="/food/{{$food->id}}" method="POST">
-        @csrf
-        @method('DELETE')
-        <button class="btn-sm btn-danger">Remove Recipe <i class="bi bi-shield"></i></button>
-    </form>
+    <div>
+        <form action="/food/{{$food->id}}" method="">
+            @csrf
+            @method('UPDATE')
+            <a class="btn btn-primary m-1" href='/food/edit'>Edit Recipe <i class="bi bi-shield"></i></a>
+        </form>
+        <form action="/food/{{$food->id}}" method="POST">
+            @csrf
+            @method('DELETE')
+            <button class="btn-sm btn-danger">Remove Recipe <i class="bi bi-shield"></i></button>
+        </form>
+    </div>
 
     <a class="btn btn-sm btn-primary mt-5 mb-5" href='/food'>Back to Menu <i class="bi bi-arrow-90deg-up"></i></a>
 
