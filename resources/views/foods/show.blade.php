@@ -15,23 +15,25 @@
     <div class="container w-50 mt-5">
         <p class="display-6"> Ingredients</p>
         <ul class="list-group">
+            <!-- Array display -->
+            {{print_r($food->ingredients)}}
             @foreach($food->ingredients as $ingredient)
-            <li class="list-group-item">{{ $ingredient ?: '*'}}</li>
+                <li class="list-group-item">{{ $ingredient }}</li>
             @endforeach
         </ul>
     </div>
     <p class="display-6 mt-5"> Instructions</p>
     <div class="container w-50 mt-2 mb-5">{{$food->instruction}}</div>
-    <div>
+    <div class="show-buttons">
         <form action="/food/{{$food->id}}" method="">
             @csrf
             @method('UPDATE')
-            <a class="btn btn-primary m-1" href='/food/edit'>Edit Recipe <i class="bi bi-shield"></i></a>
+            <a href="{{ url('food/edit/'.$food->id) }}" class="btn btn-primary m-2">Edit Recipe <i class="bi bi-shield"></i></a>
         </form>
         <form action="/food/{{$food->id}}" method="POST">
             @csrf
             @method('DELETE')
-            <button class="btn-sm btn-danger">Remove Recipe <i class="bi bi-shield"></i></button>
+            <button class="btn btn-danger m-2">Remove Recipe <i class="bi bi-shield"></i></button>
         </form>
     </div>
 

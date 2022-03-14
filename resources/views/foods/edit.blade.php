@@ -6,11 +6,38 @@
 <div class="container mt-5 text-center">
     <div>
         <div>
-            <h1 class="display-4">Create a recipe!</h1>
+            <h1 class="display-4">Edit recipe</h1>
         </div>
         <div>
-            <form action="/food" method="POST">
-                <!-- cross site refresh forgery -->
+            <form action="{{ url('update-food/'.$food->id) }}" method="POST">
+                @csrf
+                @method('PUT')
+
+                <div class="form-group mb-3">
+                    <label for="">Recipe name</label>
+                    <input type="text" name="name" value="{{$food->name}}" class="form-control">
+                </div>
+                <div class="form-group mb-3">
+                    <label for="">Description</label>
+                    <input type="text" name="description" value="{{$food->description}}" class="form-control">
+                </div>
+                <div class="form-group mb-3">
+                    @foreach($food->ingredients as $ingredient)
+                        <label for="">Ingredients</label>
+                        <input type="text" name="ingredients" value="{{$ingredient}}" class="form-control">
+                    @endforeach
+                </div>
+                <div class="form-group mb-3">
+                    <label for="">Instructions</label>
+                    <input type="text" name="instruction" value="{{$food->instruction}}" class="form-control">
+                </div>
+                <div class="form-group mb-3">
+                    <button type="submit" class="btn btn-primary">Update Recipe!</button>
+                </div>
+
+            </form>
+            <!-- <form action="/food" method="POST">
+                cross site refresh forgery
                 <div>
                     @csrf
                     <label class="mt-5" for="name">Meal name:</label>
@@ -43,6 +70,7 @@
                 <br>
                 <a class="btn btn-sm btn-primary mt-5 mb-5" href='/food'>Back to Menu <i class="bi bi-arrow-90deg-up"></i></a>
             </form>
+            -->
         </div>
     </div>
 </div>

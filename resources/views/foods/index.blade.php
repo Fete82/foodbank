@@ -15,7 +15,7 @@
                 <h3 class="p-1">{{ $food->name }}</h3>
                 <p>{{ $food->description }}</p>
 
-</a>
+                </a>
             </div>
         </div>
         @endforeach

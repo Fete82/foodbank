@@ -18,3 +18,9 @@ input {
     background-image: url('/img/background-cows.jpg');
     background-position: center;
 }
+
+.show-buttons {
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+}
