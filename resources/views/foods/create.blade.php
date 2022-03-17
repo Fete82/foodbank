@@ -22,7 +22,7 @@
                     <br>
                     <textarea type="textarea" id="input" name="description"></textarea>
                 </div>
-                <div>
+                <!--<div>
                     <fieldset>
                         <label class="mt-3">Ingredients:</label>
                         <br>
@@ -33,7 +33,7 @@
                         <input type="text" class="input mt-2" name="ingredients[]"><br>
                         <input type="text" class="input mt-2" name="ingredients[]"><br>
                     </fieldset>
-                </div>
+                </div>-->
                 <div>
                 <label class="mt-3">Cooking instructions:</label>
                     <br>

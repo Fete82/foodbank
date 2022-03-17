@@ -9,19 +9,6 @@
     <p class="mt-3"><strong>Created by {{ $food->user->name }} on {{ $food->created_at }}</strong></p>
     <div class="container w-50 mt-5"><i>{{$food->description}}</i></div>
 
-    <!-- NUTRITION PARAM 
-    <div class="container w-50 mt-5">{{$food->nutrition ?: 'nutrition- 0'}}</div>
-    -->
-    <div class="container w-50 mt-5">
-        <p class="display-6"> Ingredients</p>
-        <ul class="list-group">
-            <!-- Array display -->
-            {{print_r($food->ingredients)}}
-            @foreach($food->ingredients as $ingredient)
-                <li class="list-group-item">{{ $ingredient }}</li>
-            @endforeach
-        </ul>
-    </div>
     <p class="display-6 mt-5"> Instructions</p>
     <div class="container w-50 mt-2 mb-5">{{$food->instruction}}</div>
     <div class="show-buttons">
