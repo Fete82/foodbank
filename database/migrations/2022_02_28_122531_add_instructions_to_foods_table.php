@@ -14,7 +14,7 @@ class AddInstructionsToFoodsTable extends Migration
     public function up()
     {
         Schema::table('foods', function (Blueprint $table) {
-            $table->string('instruction');
+            $table->text('instruction');
         });
     }
 
