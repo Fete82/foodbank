@@ -13,7 +13,9 @@
             <div>
                 <a href="/food/<?= $food->id ?>">
                 <h3 class="p-1">{{ $food->name }}</h3>
+                <p>#{{ $food->category['name'] }}</p>
                 <p>{{ $food->description }}</p>
+
 
                 </a>
             </div>
