@@ -35,6 +35,12 @@
                 <a class="nav-link" href="{{ url('/food') }}">
                     Meals
                 </a>
+                <a class="nav-link" href="{{ url('/food') }}">
+                    Blog
+                </a>
+                <a class="nav-link" href="{{ url('/food') }}">
+                    Contact
+                </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                     <span class="navbar-toggler-icon"></span>
                 </button>
