@@ -9,6 +9,10 @@ class Category extends Model
 {
     use HasFactory;
 
+    public $fillable = ['name'];
+    
+    protected $table = "categories";
+
     public function foods() {
         return $this->hasMany(Food::class);
     }
