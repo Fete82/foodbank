@@ -26,9 +26,7 @@
                     <input type="text" name="instruction" value="{{$food->instruction}}" class="form-control">
                 </div>
                 <div class="form-group mb-3">
-                    <a href="/food/">
                         <button type="submit" class="btn btn-primary">Update Recipe!</button>
-                    </a>
                 </div>
 
             </form>

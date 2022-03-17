@@ -65,7 +65,7 @@ class FoodController extends Controller
 
         $food->update();
 
-        return redirect()->back()->with('status','Recipe Updated Successfully');
+        return redirect('/food')->with('message', 'Recipe updated successfully!');
     }
     public function destroy($id)
     {
