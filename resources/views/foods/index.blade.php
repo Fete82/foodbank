@@ -9,11 +9,12 @@
         <p class="message-display text-success">{{ session('message') }}</p>
 
         @foreach($foods as $food)
-        <div class="container">
+        <div class="container mt-5">
             <div>
                 <a href="/food/<?= $food->id ?>">
-                <h3 class="p-1">{{ $food->name }}</h3>
-                <p>{{ $food->description }}</p>
+                <p class="h3">{{ $food->name }}</h3>
+                <p class="h6 text-primary">#{{ $food->category }}</p>
+                <p class="mt-2">{{ $food->description }}</p>
                 </a>
             </div>
         </div>
