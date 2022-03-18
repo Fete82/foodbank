@@ -20,6 +20,7 @@ class CreateFoodsTable extends Migration
             $table->string('name');
             $table->text('description');
             $table->text('ingredients');
+            $table->string('category');
             $table->timestamps();
         });
     }

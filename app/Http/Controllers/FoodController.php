@@ -42,6 +42,7 @@ class FoodController extends Controller
         $food->description = request('description');
         $food->ingredients = request('ingredients');
         $food->instruction = request('instruction');
+        $food->category = request('category');
         // Binds user id to post:
         $food->user_id = Auth::user()->id;
 
@@ -64,6 +65,7 @@ class FoodController extends Controller
         $food->description = $request->input('description');
         $food->ingredients = $request->input('ingredients');
         $food->instruction = $request->input('instruction');
+        $food->category = $request->input('category');
 
         $food->update();
 
