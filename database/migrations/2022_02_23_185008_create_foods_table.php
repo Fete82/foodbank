@@ -19,6 +19,7 @@ class CreateFoodsTable extends Migration
             $table->foreign('user_id')->references('id')->on('users');
             $table->string('name');
             $table->text('description');
+            $table->text('ingredients');
             $table->timestamps();
         });
     }

@@ -22,6 +22,10 @@
                     <input type="text" id="input" name="description" value="{{$food->description}}" class="form-control">
                 </div>
                 <div class="form-group mb-3">
+                    <label for="">Ingredients</label>
+                    <input type="text" id="input" name="ingredients" value="{{$food->ingredients}}" class="form-control">
+                </div>
+                <div class="form-group mb-3">
                     <label for="">Instructions</label>
                     <input type="text" id="input" name="instruction" value="{{$food->instruction}}" class="form-control">
                 </div>
