@@ -6,7 +6,7 @@
     <div class="container w-50 mt-5 text-center">
         <h1 class="display-4 p-3">Selection of meals</h1>
 
-        <p class="message-display text-success">{{ session('message') }}</p>
+        <p class="h3 message-display text-success">{{ session('message') }}</p>
 
         @foreach($foods as $food)
         <div class="container mt-5">
