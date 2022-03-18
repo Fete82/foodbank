@@ -76,6 +76,6 @@ class FoodController extends Controller
         $food = Food::findOrFail($id);
         $food->delete();
 
-        return redirect('/food');
+        return redirect('/food')->with('message', 'Recipe removed successfully!');
     }
 }
