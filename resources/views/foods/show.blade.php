@@ -6,7 +6,8 @@
 <div class="container mt-5 text-center">
     <h1 class="display-5">Recipe</h1>
     <h1 class="display-1">{{ $food->name }}</h1>
-    <p class="mt-3"><strong>Created by {{ $food->user->name }} on {{ $food->created_at }}</strong></p>
+    <p class="mt-4"><strong>Created by <i>{{ $food->user->name }}</i> on {{ $food->created_at }}</strong></p>
+    <p class="mt-1 text-primary"><strong>#{{ $food->category }}</strong></p>
     <div class="container w-50 mt-5"><i>{{$food->description}}</i></div>
     <p class="display-6 mt-5">Ingredients</p>
     <div class="container w-50 mt-2 mb-5">{{$food->ingredients}}</div>
