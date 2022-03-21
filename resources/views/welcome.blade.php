@@ -4,7 +4,7 @@
 
 <body class="welcome-wrapper-background">
     <!-- Welcoming page -->
-    <div class="align-middle text-center mt-5 text-dark">
+    <div class="align-middle text-center mt-5 text-light">
         <h1 class="display-1 p-3">Foodbank</h1>
         <h1 class="display-6">Cows are mostly food</h1>
 
