@@ -27,10 +27,10 @@
 </head>
 <body>
     <div id="app">
-        <nav class="navbar navbar-expand-md navbar-dark bg-dark shadow-sm">
+        <nav class="navbar navbar-expand-md navbar-dark bg-transparent shadow-sm">
             <div class="container">
                 <a class="navbar-brand" href="{{ url('/') }}">
-                    Home
+                <i class="bi bi-piggy-bank"></i> Foodbank
                 </a>
                 <a class="nav-link" href="{{ url('/food') }}">
                     Meals

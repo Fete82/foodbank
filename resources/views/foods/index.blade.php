@@ -4,7 +4,8 @@
     <!-- Main content -->
 
     <div class="container w-50 mt-5 text-center">
-        <h1 class="display-4 p-3">Selection of meals</h1>
+        <h1 class="display-3 p-3">Meals</h1>
+        <h3 class="display-6">Index of recipes</h3>
 
         <p class="h3 message-display text-success">{{ session('message') }}</p>
 
