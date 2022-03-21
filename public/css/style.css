@@ -1,6 +1,10 @@
 a {
-    color: black;
+    color: rgb(192, 192, 192);
     text-decoration: none;
+}
+
+a:hover {
+    color: white;
 }
 
 textarea {
@@ -15,10 +19,11 @@ input {
 
 .welcome-wrapper-background {
     /* Target class IS correct, image not showing */
-    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('/img/bg-dark-bull.jpg');
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/img/bg-dark-bull.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: none;
+    background-attachment: fixed;
 }
 
 .show-buttons {

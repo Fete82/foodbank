@@ -25,9 +25,9 @@
     <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
 </head>
-<body>
+<body class="welcome-wrapper-background">
     <div id="app">
-        <nav class="navbar navbar-expand-md navbar-dark bg-transparent shadow-sm">
+        <nav class="navbar navbar-expand-md navbar-fixed-top navbar-dark bg-transparent">
             <div class="container">
                 <a class="navbar-brand" href="{{ url('/') }}">
                 <i class="bi bi-piggy-bank"></i> Foodbank
@@ -76,6 +76,7 @@
                                 <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
                                     <a class="dropdown-item" href="profile-NOTWORKING">
                                         {{ __('Profile') }}
+                                        <!-- for the future -->
                                     </a>
                                     <a class="dropdown-item" href="{{ route('logout') }}"
                                        onclick="event.preventDefault();

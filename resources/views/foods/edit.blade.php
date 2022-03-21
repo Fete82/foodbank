@@ -3,7 +3,7 @@
 @section('content')
 <!-- Main content -->
 
-<div class="container mt-5 w-50 text-center">
+<div class="container mt-5 text-center text-light">
     <div>
         <div>
             <h1 class="display-4">Edit recipe</h1>
@@ -21,14 +21,14 @@
                 <label for="">Category</label>
                 </div>
                 <div class="btn-group mb-4" role="group" aria-label="Basic radio toggle button group">
-                    <input type="radio" class="btn-check" name="category" value="Healthy" id="btnradio1" autocomplete="off">
-                    <label class="btn btn-outline-primary" for="btnradio1">Healthy</label>
+                    <input type="radio" class="btn-check" name="category" value="Healthy" id="btnradio1" autocomplete="off" checked>
+                    <label class="btn btn-primary" for="btnradio1">Healthy</label>
 
                     <input type="radio" class="btn-check" name="category" value="Very Healthy" id="btnradio2" autocomplete="off">
-                    <label class="btn btn-outline-primary" for="btnradio2">Very Healthy</label>
+                    <label class="btn btn-primary" for="btnradio2">Very Healthy</label>
 
                     <input type="radio" class="btn-check" name="category" value="Super Healthy" id="btnradio3" autocomplete="off">
-                    <label class="btn btn-outline-primary" for="btnradio3">Super Healthy</label>
+                    <label class="btn btn-primary" for="btnradio3">Super Healthy</label>
                 </div>
                 <div class="form-group mb-3">
                     <label for="">Description</label>
@@ -51,4 +51,5 @@
         </div>
     </div>
 </div>
+<p class="text-secondary text-center">&copy; 2022 Edvin Lindahl</p>
 @endsection

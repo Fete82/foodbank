@@ -43,7 +43,7 @@ class FoodController extends Controller
         $food->ingredients = request('ingredients');
         $food->instruction = request('instruction');
         $food->category = request('category');
-        // Binds user id to post:
+        // Binds user id to post, AUTH is working despite red:
         $food->user_id = Auth::user()->id;
 
         $food->save();

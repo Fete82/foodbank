@@ -2,7 +2,7 @@
 
 @section('content')
 
-<body class="welcome-wrapper-background">
+
     <!-- Welcoming page -->
     <div class="align-middle text-center mt-5 text-light">
         <h1 class="display-1 pt-5 pb-3">Foodbank</h1>
@@ -14,7 +14,7 @@
         </div>
     </div>
     <footer class="footer-fixed text-center fixed-bottom">
-        <p class="text-light">&copy; 2022 Edvin Lindahl</p>
+        <p class="text-secondary">&copy; 2022 Edvin Lindahl</p>
     </footer>
 </div>
 
